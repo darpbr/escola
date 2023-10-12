@@ -1,4 +1,4 @@
-package br.com.darp.escola;
+package br.com.darp.escola.dominio.aluno;
 
 import br.com.darp.escola.exceptions.DomainException;
 

@@ -1,4 +1,4 @@
-package br.com.darp.escola;
+package br.com.darp.escola.dominio.aluno;
 
 public class FabricaDeAluno {
     private Aluno aluno;

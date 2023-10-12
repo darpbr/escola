@@ -1,4 +1,4 @@
-package br.com.darp.escola;
+package br.com.darp.escola.dominio.aluno;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ public class Aluno {
     private String nome;
     private Email email;
     private List<Telefone> telefones = new ArrayList<>();
-
+    private String senha;
     public Aluno(CPF cpf, String nome, Email email) {
         this.cpf = cpf;
         this.nome = nome;
@@ -23,16 +23,16 @@ public class Aluno {
         this.telefones.add(new Telefone(ddd, numero));
     }
 
-    public CPF getCpf() {
-        return cpf;
+    public String getCpf() {
+        return cpf.getNumero();
     }
 
     public String getNome() {
         return nome;
     }
 
-    public Email getEmail() {
-        return email;
+    public String getEmail() {
+        return email.getEmail();
     }
 
     public List<Telefone> getTelefones() {

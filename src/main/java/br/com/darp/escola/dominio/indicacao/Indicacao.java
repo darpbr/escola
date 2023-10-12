@@ -1,4 +1,6 @@
-package br.com.darp.escola;
+package br.com.darp.escola.dominio.indicacao;
+
+import br.com.darp.escola.dominio.aluno.Aluno;
 
 import java.time.LocalDateTime;
 

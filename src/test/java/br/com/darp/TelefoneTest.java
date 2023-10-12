@@ -1,6 +1,6 @@
 package br.com.darp;
 
-import br.com.darp.escola.Telefone;
+import br.com.darp.escola.dominio.aluno.Telefone;
 import br.com.darp.escola.exceptions.DomainException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -37,5 +37,7 @@ public class TelefoneTest {
         Telefone telefone = new Telefone("61","1234-1234");
         Assertions.assertTrue(telefone.toString().contains("1234-1234"));
         Assertions.assertTrue(telefone.toString().contains("61"));
+        Assertions.assertEquals("61",telefone.getDdd());
+        Assertions.assertEquals("1234-1234",telefone.getNumero());
     }
 }

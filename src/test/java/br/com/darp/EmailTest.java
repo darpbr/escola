@@ -1,6 +1,6 @@
 package br.com.darp;
 
-import br.com.darp.escola.Email;
+import br.com.darp.escola.dominio.aluno.Email;
 import br.com.darp.escola.exceptions.DomainException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
